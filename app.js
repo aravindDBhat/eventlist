@@ -35,7 +35,7 @@ app.post("/delete",function(req,res){
    array.splice(checked,1);
   res.redirect("/");
 })
-app.listen(3000,function(){
+app.listen(process.env.port || 3000,function(){
 console.log("success");
 
 })
